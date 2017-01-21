@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Ratings";
+}
+
+<h1>RATING</h1>
+
+<form action ="/Home/DrawRating">
+    <input type="number" min="0" max="100"
+           name="rating" value="@ViewBag.Rating" />
+    <input type="submit" value="Draw" />
+</form>
+
+<br />
+@Html.Raw(ViewBag.Stars)
